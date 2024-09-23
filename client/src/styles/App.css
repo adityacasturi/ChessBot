@@ -1,0 +1,12 @@
+* { 
+  margin:0; padding:0;
+  background-color: #161511;
+}
+
+#info-bug {
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  width: 500px;
+  margin: 135px 761px 0 auto;
+}
