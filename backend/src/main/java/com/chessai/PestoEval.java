@@ -98,14 +98,14 @@ public class PestoEval {
     };
 
     static int[] mg_bishop_table = {
-            -29, 4, -82, -37, -25, -42, 7, -8,
-            -26, 16, -18, -13, 30, 59, 18, -47,
-            -16, 37, 43, 40, 35, 50, 37, -2,
-            -4, 5, 19, 50, 37, 37, 7, -2,
-            -6, 13, 13, 26, 34, 12, 10, 4,
-            0, 15, 15, 15, 14, 27, 18, 10,
-            4, 15, 16, 0, 7, 21, 33, 1,
-            -33, -3, -14, -21, -13, -12, -39, -21,
+            -29,   4, -82, -37, -25, -42,   7,  -8,
+            -26,  16, -18, -13,  30,  59,  18, -47,
+            -16,  37,  43,  40,  35,  50,  37,  -2,
+            -4,   5,  19,  50,  37,  37,   7,  -2,
+            -6,  13,  13,  26,  34,  12,  10,   4,
+            0,  15,  15,  15,  14,  27,  18,  10,
+            4,  15,  16,   0,   7,  21,  33,   1,
+            -33,  -3, -14, -21, -13, -12, -39, -21,
     };
 
     static int[] eg_bishop_table = {
@@ -301,6 +301,11 @@ public class PestoEval {
         if (mgPhase > 24)
             mgPhase = 24; // in case of early promotion
         int egPhase = 24 - mgPhase;
+
+        // TODO implement Tapered Eval
+        // https://www.chessprogramming.org/Tapered_Eval
+        // Taper piece values by game phase [ex: B: 5, M: 10, E:50 for queens)
+
         return (mgScore * mgPhase + egScore * egPhase) / 24;
     }
 

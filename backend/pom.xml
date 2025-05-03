@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.chessai</groupId>
-	<artifactId>chessai-backend</artifactId>
+	<artifactId>chessbot-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>chessai</name>
 	<description>chessai</description>

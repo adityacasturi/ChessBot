@@ -15,7 +15,8 @@ public class OpeningsUtilityModule {
     public static void initOpeningLines() {
         openingLines = new ArrayList<>();
         // Download the latest lichess-elite.txt file and add its path here.
-        String filePath = "lichess-elite.txt";
+        String filePath = "/Users/adityacasturi/Documents/Projects/ChessAI/backend/src/main/java" +
+                "/com/chessai/data/lichess-elite.txt";
         try {
             BufferedReader reader = new BufferedReader(new FileReader(filePath));
             String openingLine = "";
