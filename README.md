@@ -1,15 +1,41 @@
-# ChessAI
+# Chess Bot
 
-Features:
-- Chessboard interface and legal move assistance created from scratch using ReactJS
-- Spring Boot backend to handle board evaluation and move generation
-- Minimax algorithm improved by alpha-beta pruning capable of analyzing ~150,000 positions/sec
-- Implemented bitboards using little endian rank-file mapping to improve speed of board operations
-- Openings book compiled using high-level games from lichess.org
+A full-stack (React.js + Spring Boot) chess application featuring a bot opponent using multiple evaluation techniques and opening book strategies.
 
-## Demos
+## Features
 
-https://github.com/user-attachments/assets/cc0181e6-53b6-461d-9c41-f07ceab9f71f
+- Interactive from-scratch chess board with drag-and-drop functionality
+- Bot opponent using multiple techniques for middle and late game evaluation
+- Opening book integration for clinical early game play
+- Capable of analyzing 1,000,000+ positions in ~3-4 seconds
+- Real-time move validation that is reflected on the board
 
-https://github.com/user-attachments/assets/f4636a77-a87d-4dbc-9207-81c19fb7bc2c
+## Installation
 
+1. Clone the repository:
+```bash
+git clone https://github.com/adityacasturi/ChessBot.git
+cd ChessBot
+```
+
+2. Install frontend dependencies:
+```bash
+cd client
+npm install
+```
+
+3. Install backend dependencies:
+```bash
+cd backend
+mvn clean install
+```
+
+## 🚀 Running the Application
+
+You can start both frontend and backend servers simultaneously using:
+
+```bash
+npm start
+```
+
+The application will be available at `http://localhost:3000`
