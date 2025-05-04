@@ -30,7 +30,7 @@ cd backend
 mvn clean install
 ```
 
-## 🚀 Running the Application
+## Running the Application
 
 You can start both frontend and backend servers simultaneously using:
 
