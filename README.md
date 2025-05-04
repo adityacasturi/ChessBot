@@ -4,11 +4,11 @@ A full-stack (React.js + Spring Boot) chess application featuring a bot opponent
 
 ## Features
 
-- Interactive from-scratch chess board with drag-and-drop functionality
-- Bot opponent using multiple techniques for middle and late game evaluation
-- Opening book integration for clinical early game play
-- Capable of analyzing 1,000,000+ positions in ~3-4 seconds
-- Real-time move validation that is reflected on the board
+- Chessboard UI: Developed from scratch with real-time legal move highlighting and bot opponent insights (evaluation time + positions evaluated)
+- Bitboard-Based State Management: Uses a bitboard representation for performant game state storage, enabling rapid evaluation and manipulation
+- Bot Opponent: Implemented a bot using minimax search with alpha-beta pruning, optimized to analyze over 1,000,000+ positions in 3–4 seconds
+- Dynamic Evaluation Engine: Integrated various heuristics for mid and endgame evaluation including piece mobility, center control, and more
+- Opening Book Support: Embedded a database of master-level games from lichess.org for strong and accurate early game play
 
 ## Installation
 
@@ -20,7 +20,6 @@ cd ChessBot
 
 2. Install dependencies by running:
 ```bash
-npm install
 cd client
 npm install
 ```
