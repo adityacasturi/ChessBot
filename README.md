@@ -18,16 +18,11 @@ git clone https://github.com/adityacasturi/ChessBot.git
 cd ChessBot
 ```
 
-2. Install frontend dependencies:
+2. Install dependencies by running:
 ```bash
+npm install
 cd client
 npm install
-```
-
-3. Install backend dependencies:
-```bash
-cd backend
-mvn clean install
 ```
 
 ## Running the Application
@@ -39,3 +34,12 @@ npm start
 ```
 
 The application will be available at `http://localhost:3000`
+
+## Demos
+
+https://github.com/user-attachments/assets/79bdb594-cd14-45cc-b34e-12958d3758d5
+
+https://github.com/user-attachments/assets/089ba4de-c889-488a-a68a-cb4f7b73c712
+
+
+
